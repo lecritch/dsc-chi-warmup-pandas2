@@ -329,6 +329,8 @@ movies.head()
 
 #### Sort `movies` by the Day column, with 'Monday' first and 'Sunday' last
 
+[*Hint*](https://pandas.pydata.org/pandas-docs/version/0.25.0/reference/api/pandas.Categorical.html#pandas.Categorical)
+
 
 ```python
 #Your code here
@@ -544,6 +546,8 @@ area_code
 run_test(area_code, 'area_code')
 ```
 
+## Data Manipulation
+
 #### Group the data by what day of the week the movies are shown using `.groupby()`
 
 #### Assign to the variable `movies_grp_day` 
@@ -553,9 +557,9 @@ run_test(area_code, 'area_code')
 
 #### Again using `movies_grp_day`, assign to `unique_movies_per_day` a series where the index is the day of the week and the values are unique counts of movies per day of the week.
 
-#### Use `movies_per_day` and `unique_movies_per_day` to calculate a series of how many repeat movies are shown per day of the week.  Assign this series to `repeats`
+#### Use `movies_per_day` and `unique_movies_per_day` to calculate a series of how many movie showings per day of the week are of movies that are shown more than once.  Assign this series to `repeats`
 
-#### If needed, sort `repeats` so Monday is the first entry and Sunday is the last
+#### Sort `repeats` so Monday is the first entry and Sunday is the last
 
 
 ```python
@@ -646,9 +650,7 @@ run_test(day_underwriter_min, 'day_underwriter_min')
 #### Sort so that the first index is Monday and the last is Sunday
 
 
-*Hint 1: look at [the groupby documentation](https://pandas.pydata.org/pandas-docs/version/0.23.4/generated/pandas.core.groupby.DataFrameGroupBy.agg.html) and write a function*
-
-[*Hint 2*](https://pandas.pydata.org/pandas-docs/version/0.25.0/reference/api/pandas.Categorical.html#pandas.Categorical)
+*Hint: look at [the groupby documentation](https://pandas.pydata.org/pandas-docs/version/0.23.4/generated/pandas.core.groupby.DataFrameGroupBy.agg.html) and write a function*
 
 
 ```python
